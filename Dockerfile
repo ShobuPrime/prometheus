@@ -1,4 +1,4 @@
-FROM prom/prometheus:latest
+FROM prom/prometheus:master
 
 ENV USER_ID=1000
 ENV GROUP_ID=1000
