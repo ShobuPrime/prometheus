@@ -3,9 +3,6 @@ FROM prom/prometheus:master
 ENV USER_ID=1000
 ENV GROUP_ID=1000
 
-RUN mkdir -p /prometheus
-RUN chown -R ${USER_ID}:${GROUP_ID} etc/prometheus /prometheus
-
 USER       ${USER_ID}
 EXPOSE     9090
 VOLUME     [ "/prometheus" ]
